@@ -40,24 +40,37 @@ PROCEDURE:
 	at the end of compilation, add the path <path_to_toolchain>/ri5cy_gnu_toolchain/install/bin to the environmental variables
 
 3.	Download PULPino suite:
+
 		a) git clone https://github.com/pulp-platform/pulpino.git
+		
 		b) cd pulpino
+		
 		c) ./update-ips.py	
 	
 4.	To merge the Klessydra core:
+
 		a) git clone https://github.com/klessydra/T02x.git
+		
                 b) cd T02x
+		
         	c) ./runMErge.sh <pulpino_path>
 
 5.	OPTIONAL: After merging is done, this is how you will be able to test Klessydra-2th.
-		-Open the terminal and navigate to "sw" folder inside pulpino and execute the following commands		
+		-Open the terminal and navigate to "sw" folder inside pulpino and execute the following commands
+		
 			a) e.g. mkdir build
+			
 			b) cp cmake_configure.klessydra-t0-2th.gcc.sh build/
+			
 			c) cd build
+			
 			d) ./cmake_configure.klessydra-t0-2th.gcc.sh
+			
 			e) make vcompile
+			
                         EXAMPLE TEST:
 			f) make testALU.vsimc
+			
 	IT"S DONE!!!!!!
 
 	Extra options: You can modify the cmake-configure file:
