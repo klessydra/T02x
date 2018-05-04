@@ -10,17 +10,18 @@ you can easily merge the Klessydra-Core in the Pulpino project.
 	- CMake >= 2.8.0, versions greater than 3.1.0 recommended due to support for ninja
 	- riscv-toolchain, there are two choices for getting the toolchain: 
 
-  	1) RECOMENDED OPTION: Or use the custom RISC-V toolchain from ETH. 
-  	The ETH versions supports all the ISA extensions that were incorporated 
-	  into the RI5CY core as well as the reduced base instruction set for zero-riscy.
+  		1) RECOMENDED OPTION: Or use the custom RISC-V toolchain from ETH. 
+  		The ETH versions supports all the ISA extensions that were incorporated 
+	  	into the RI5CY core as well as the reduced base instruction set for zero-riscy.
 	        " https://github.com/pulp-platform/ri5cy_gnu_toolchain.git "
 
-	2) Either using the official RISC-V toolchain supported by Berkeley.
- 	       " https://github.com/riscv/riscv-gnu-toolchain "
+		2) Either using the official RISC-V toolchain supported by Berkeley.
+ 	       	" https://github.com/riscv/riscv-gnu-toolchain "
 
 
-	  Please make sure you are using the newlib version of the toolchain.
+	  	Please make sure you are using the newlib version of the toolchain.
 	- python2 >= 2.6
+	
 ###########################################################################################
 
 - IF you already have pulpino and their toolchain, than skip ahead to step.4
