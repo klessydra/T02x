@@ -31,9 +31,12 @@ PROCEDURE:
 		sudo apt-get install git cmake tcsh python-yaml tcsh autoconf automake autotools-dev curl libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev
 
 2.	Download the toolchain, execute the following commands in the folder where you want to download the pulpino version of the riscv-gnu toolchain
-		a) git clone https://github.com/pulp-platform/ri5cy-gnu-toolchain.git
-		b) cd ri5cy-gnu-toolchain
-		c) make ZERORISCY=1
+
+		 a) git clone https://github.com/pulp-platform/ri5cy-gnu-toolchain.git
+		 
+		 b) cd ri5cy-gnu-toolchain
+		 
+		 c) make ZERORISCY=1
 	at the end of compilation, add the path <path_to_toolchain>/ri5cy_gnu_toolchain/install/bin to the environmental variables
 
 3.	Download PULPino suite:
