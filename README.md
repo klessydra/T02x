@@ -53,9 +53,9 @@ PROCEDURE:
 
 		a) git clone https://github.com/klessydra/T02x.git
 		
-                b) cd T02x
+		b) cd T02x
 		
-        	c) ./runMErge.sh <pulpino_path>
+		c) ./runMErge.sh <pulpino_path>
 
 5.	OPTIONAL: After merging is done, this is how you will be able to test Klessydra-2th.
 		-Open the terminal and navigate to "sw" folder inside pulpino and execute the following commands
