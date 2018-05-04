@@ -59,19 +59,19 @@ PROCEDURE:
 
 5.	OPTIONAL: After merging is done, this is how you will be able to test Klessydra-2th.
 		-Open the terminal and navigate to "sw" folder inside pulpino and execute the following commands
+
+		a) e.g. mkdir build
 		
-			a) e.g. mkdir build
-			
-			b) cp cmake_configure.klessydra-t0-2th.gcc.sh build/
-			
-			c) cd build
-			
-			d) ./cmake_configure.klessydra-t0-2th.gcc.sh
-			
-			e) make vcompile
-			
-                        EXAMPLE TEST:
-			f) make testALU.vsimc
+		b) cp cmake_configure.klessydra-t0-2th.gcc.sh build/
+		
+		c) cd build
+		
+		d) ./cmake_configure.klessydra-t0-2th.gcc.sh
+		
+		e) make vcompile
+		
+		EXAMPLE TEST:
+		f) make testALU.vsimc
 			
 	IT"S DONE!!!!!!
 
