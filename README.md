@@ -81,6 +81,3 @@ PROCEDURE:
 		make nameofthetest.vsim (or .vsimc to run a test without modelsim GUI)
 
 7.	The list of the tests that passed on Klessydra are available in the file SIMUL_TEST_REULTS.pdf
-
-
-P.S.
