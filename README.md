@@ -57,7 +57,7 @@ PROCEDURE:
 		
 		c) ./runMErge.sh <pulpino_path>
 
-5.	OPTIONAL: After merging is done, this is how you will be able to test Klessydra-2th.
+5.	OPTIONAL: After merging is done, this is how you will be able to test Klessydra-t0-2th.
 		-Open the terminal and navigate to "sw" folder inside pulpino and execute the following commands
 
 		a) e.g. mkdir build
