@@ -39,7 +39,7 @@ PROCEDURE:
 		
 		c) make ZERORISCY=1
 		
-	at the end of compilation, add the path <path_to_toolchain>/ri5cy_gnu_toolchain/install/bin to the environmental variables
+	at the end of compilation, add the path **_<path_to_toolchain>/ri5cy_gnu_toolchain/install/bin_** to the environmental variables
 
 3.	Download PULPino suite:
 
