@@ -1,4 +1,4 @@
-# T02x
+# Merging T02x User Guide
 
 Intro: This guide explains how one can download and install Pulpino, and 
 it's modified version of the riscv-gnu toolchain. And then it shows how 
