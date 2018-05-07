@@ -31,8 +31,6 @@ set RTL_PATH="${RTL_PATH}"
 # Preparing library
 ##############################################################################
 
-echo "${Green}--> Compiling ${IP}... ${NC}"
-
 rm -rf $LIB_PATH
 
 vlib $LIB_PATH
@@ -47,6 +45,7 @@ else
 	exit 0
 endif
 
+echo "${Green}--> Compiling ${IP}... ${NC}"
 echo "${Green}Compiling component: ${Brown} klessydra-t0-3th ${NC}"
 echo "${Red}"
 vcom -2008 -quiet -suppress 2583 -work ${LIB_PATH}   ${IP_PATH}/PKG_RiscV_Klessydra_thread_parameters.vhd || goto error
