@@ -1,6 +1,8 @@
 # Merging T02x User Guide
 
-Intro: This guide explains how one can download and install Pulpino, and 
+Intro: The Klessydra processing core family is is a set of processors featuring full compliance with the RISC-V. Klessydra cores fully support the RV32I Base Integer Instruction set in M-mode and one instruction from the RV32A extension.
+
+This guide explains how one can download and install Pulpino, and 
 it's modified version of the riscv-gnu toolchain. And then it shows how 
 you can easily merge the Klessydra-Core in the Pulpino project.
 
