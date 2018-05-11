@@ -31,6 +31,7 @@ you can easily merge the Klessydra-Core in the Pulpino project.
 
 PROCEDURE:
 1.	Install the following packeges:
+		
 		sudo apt-get install git cmake python-yaml tcsh autoconf automake autotools-dev curl libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev
 
 2.	Download the toolchain, execute the following commands in the folder where you want to download the pulpino version of the riscv-gnu toolchain
