@@ -25,6 +25,9 @@ USE_KLESSYDRA_T0_2TH=0
 # if you are using klessydra-t0-3th (The four pipeline version of klessydra t0), set this to 1
 USE_KLESSYDRA_T0_3TH=0
 
+# if you are using klessydra-t1-3th (The four pipeline version of klessydra t0), set this to 1
+USE_KLESSYDRA_T1_3TH=0
+
 # set this to 1 if you are using the Floating Point extensions for riscy only
 RISCY_RV32F=0
 
@@ -51,6 +54,7 @@ cmake "$PULP_GIT_DIRECTORY"/sw/ \
     -DRISCY_RV32F="$RISCY_RV32F" \
     -DUSE_KLESSYDRA_T0_2TH="$USE_KLESSYDRA_T0_2TH" \
     -DUSE_KLESSYDRA_T0_3TH="$USE_KLESSYDRA_T0_3TH" \
+    -DUSE_KLESSYDRA_T1_3TH="$USE_KLESSYDRA_T1_3TH" \
     -DUSE_ZERO_RISCY="$USE_ZERO_RISCY" \
     -DZERO_RV32M="$ZERO_RV32M" \
     -DZERO_RV32E="$ZERO_RV32E" \

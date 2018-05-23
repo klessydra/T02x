@@ -30,6 +30,7 @@ module tb;
   parameter  THREAD_POOL_SIZE = 4;
   parameter  USE_KLESSYDRA_T0_2TH = 0;
   parameter  USE_KLESSYDRA_T0_3TH = 0;
+  parameter  USE_KLESSYDRA_T1_3TH = 0;
   parameter  USE_ZERO_RISCY = 0;
   parameter  RISCY_RV32F    = 0;
   parameter  ZERO_RV32M     = 1;
@@ -126,6 +127,7 @@ module tb;
   #(
     .USE_KLESSYDRA_T0_2TH (  USE_KLESSYDRA_T0_2TH),
     .USE_KLESSYDRA_T0_3TH (  USE_KLESSYDRA_T0_3TH),
+    .USE_KLESSYDRA_T1_3TH (  USE_KLESSYDRA_T1_3TH),
     .USE_ZERO_RISCY       ( USE_ZERO_RISCY ),
     .RISCY_RV32F          ( RISCY_RV32F    ),
     .ZERO_RV32M           ( ZERO_RV32M     ),
