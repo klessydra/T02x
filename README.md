@@ -28,7 +28,7 @@ in the Pulpino project.
 	
 ###########################################################################################
 
-- IF you already have pulpino and their own version of the toolchain, then skip ahead to step.4
+- IF you already have pulpino and their own version of the riscv-toolchain, then skip ahead to step.4
 
 
 PROCEDURE:
