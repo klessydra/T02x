@@ -1,10 +1,12 @@
 # Merging T02x User Guide
 
-Intro: The Klessydra processing core family is is a set of processors featuring full compliance with the RISC-V. Klessydra cores fully support the RV32I Base Integer Instruction set in M-mode and one instruction from the RV32A extension.
+Intro: The Klessydra processing core family is is a set of processors featuring full compliance with the RISC-V, and pin-to-pin compatible with the PULPino riscy cores. Klessydra cores fully support the RV32I Base Integer Instruction set, and one instruction from the RV32A extension. The only privilege level supported in klessydra is Machine mode "M".
 
-This guide explains how one can download and install Pulpino, and 
-it's modified version of the riscv-gnu toolchain. And then it shows how 
-you can easily merge the Klessydra-Core in the Pulpino project.
+This guide explains how one can download and install Pulpino, and it's 
+modified version of the riscv-gnu toolchain. It also demonstrates
+how to patch the offcial riscv-toolchain in order to add the klessydra 
+extensions. And then it shows how you can easily merge the Klessydra-Core 
+in the Pulpino project.
 
 ###########################################################################################
 - Prerequisites as indicated by the pulpino group
@@ -26,7 +28,7 @@ you can easily merge the Klessydra-Core in the Pulpino project.
 	
 ###########################################################################################
 
-- IF you already have pulpino and their toolchain, than skip ahead to step.4
+- IF you already have pulpino and their own version of the toolchain, then skip ahead to step.4
 
 
 PROCEDURE:
@@ -51,8 +53,12 @@ PROCEDURE:
 		b) cd pulpino
 		
 		c) ./update-ips.py	
-	
-4.	To merge the Klessydra core:
+
+
+4.	If you want to run the klessydra specific tests, you have to build patch the download and patch the official riscv-toolchain, and then build it. Instructions for doing so are in the README file
+	inside the folder called toolchain_files.
+
+5.	To merge the Klessydra core:
 
 		a) git clone https://github.com/klessydra/T02x.git
 		
@@ -60,8 +66,8 @@ PROCEDURE:
 		
 		c) ./runMErge.sh <pulpino_path>
 
-5.	OPTIONAL: After merging is done, this is how you will be able to test Klessydra-t0-2th.
-		-Open the terminal and navigate to "sw" folder inside pulpino and execute the following commands
+6.	OPTIONAL: After merging is done, this is how you will be able to test Klessydra-t0-2th.
+		-Open a terminal and navigate to "sw" folder inside pulpino and execute the following commands
 
 		a) e.g. mkdir build
 		
@@ -72,17 +78,16 @@ PROCEDURE:
 		d) ./cmake_configure.klessydra-t0-2th.gcc.sh
 		
 		e) make vcompile
+
+		For running Klessydra tests; the variable "USE_KLESSYDRA_TEST" in the shell file is by default set '1'. You only need to build and run a test
+		f) (e.g. make barrier_test.vsimc)
 		
-		EXAMPLE TEST:
-		f) make testALU.vsimc
+		For running a PULPino test, set the variable "USE_KLESSYDRA_TEST" inside the shell file to 0, and re-execute the shell file again, and then run
+		g) (e.g. make testALU.vsimc)
 			
 	IT"S DONE!!!!!!
 
-	Extra options: You can modify the cmake-configure file:
-	for example, if you want to run zero-riscy without multiplication extensions change the variable "ZERO_RV32M" from '1' to '0' inside cmake_configure.zeroriscy.gcc.sh .
-	save file and run
+EXTRA:
 
-6.	In order to run tests in Modelsim, go to the build folder and do the following:
+7.	In order to run tests in Modelsim, go to the build folder and do the following:
 		make nameofthetest.vsim (or .vsimc to run a test without modelsim GUI)
-
-7.	The list of the tests that passed on Klessydra are available in the file SIMUL_TEST_REULTS.pdf
