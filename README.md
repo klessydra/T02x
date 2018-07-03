@@ -79,7 +79,7 @@ PROCEDURE:
 		
 		e) make vcompile
 
-		For running Klessydra tests; the variable "USE_KLESSYDRA_TEST" in the shell file is by default set '1'. You only need to build and run a test
+		For running Klessydra tests; the variable "USE_KLESSYDRA_TEST" in the shell file is set to '1' by default. You only need to build and run your test
 		f) (e.g. make barrier_test.vsimc)
 		
 		For running a PULPino test, set the variable "USE_KLESSYDRA_TEST" inside the shell file to 0, and re-execute the shell file again, and then run
