@@ -44,9 +44,9 @@ PROCEDURE:
 		
 		c) make ZERORISCY=1
 		
-	When the buil is done, add the path **_<path_to_toolchain>/ri5cy_gnu_toolchain/install/bin_** to the environmental variables
+	When the build is done, add the path **_<path_to_toolchain>/ri5cy_gnu_toolchain/install/bin_** to the environmental variables
 
-3.	Download PULPino suite:
+3.	Download the PULPino suite:
 
 		a) git clone https://github.com/pulp-platform/pulpino.git
 		
@@ -55,10 +55,10 @@ PROCEDURE:
 		c) ./update-ips.py	
 
 
-4.	If you want to run the klessydra specific tests, you have to build patch the download and patch the official riscv-toolchain, and then build it. Instructions for doing so are in the README file
+4.	If you want to run the klessydra specific tests, you have to download and patch the official riscv-toolchain, and then build it. Instructions for doing so are included in the README.md file
 	inside the folder called toolchain_files.
 
-5.	To merge the Klessydra core:
+5.	To merge the Klessydra core, and tests:
 
 		a) git clone https://github.com/klessydra/T02x.git
 		
