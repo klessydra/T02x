@@ -287,7 +287,7 @@ begin
                 case csr_op_i is
                   when CSRRW|CSRRWI =>
                     csr_rdata_o_replicated(h) <= MTVEC_internal(h);
-                    MEPC_internal(h)              <= csr_wdata_i;
+                    MTVEC_internal(h)              <= csr_wdata_i;
                   when CSRRS|CSRRSI =>
                     csr_rdata_o_replicated(h) <= MTVEC_internal(h);
                     if(rs1(instr_word_IE) /= 0) then
