@@ -7,7 +7,7 @@
 reset_handler:
 
   li t4, 0x94
-  csrrw t4, mtvec, x0 			
+  csrrw x0, mtvec, t4		
 
   mv  x1, x0
   mv  x2, x1
