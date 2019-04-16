@@ -3,13 +3,13 @@
 #export PATH=/compilerpath/:${PATH}
 
 # Set this to one if you want to run klessydra tests
-USE_KLESSYDRA_TEST=1
+USE_KLESSYDRA_TEST=0
 
 # Set this to one if you are using a klessydra core
-USE_KLESSYDRA=1
+USE_KLESSYDRA=0
 
 # if you are using klessydra-t0-2th (The three pipeline version of klessydra t0), set this to 1
-USE_KLESSYDRA_T0_2TH=1
+USE_KLESSYDRA_T0_2TH=0
 
 # if you are using klessydra-t0-3th (The four pipeline version of klessydra t0), set this to 1
 USE_KLESSYDRA_T0_3TH=0
@@ -48,7 +48,7 @@ VSIM=`which vsim`
 RVC=0
 
 # if you are using zero-riscy, set this to 1
-USE_ZERO_RISCY=0
+USE_ZERO_RISCY=1
 
 # set this to 1 if you are using the Floating Point extensions for riscy only
 RISCY_RV32F=0
@@ -56,7 +56,7 @@ RISCY_RV32F=0
 # zeroriscy with the multiplier
 ZERO_RV32M=0
 # zeroriscy with only 16 registers
-ZERO_RV32E=0
+ZERO_RV32E=1
 
 #compile arduino lib
 ARDUINO_LIB=1

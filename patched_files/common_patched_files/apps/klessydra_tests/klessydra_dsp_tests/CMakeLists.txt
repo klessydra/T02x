@@ -1,4 +1,0 @@
-add_subdirectory(dot_product_multifunct_call_test_perf)
-add_subdirectory(dot_product_single_funct_call_test_perf)
-add_subdirectory(vect_sum_multifunct_call_test_perf)
-add_subdirectory(vect_sum_single_funct_call_test_perf)
