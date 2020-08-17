@@ -1,6 +1,22 @@
-# Merging T02x User Guide
+<img src="/pics/Klessydra_Logo.png" width="400">
 
-Intro: The Klessydra processing core family is a set of processors featuring full compliance with the RISC-V, and pin-to-pin compatible with the PULPino riscy cores. Klessydra cores fully support the RV32I Base Integer Instruction set, and one instruction from the RV32A extension. The only privilege level supported in klessydra is Machine mode "M".
+# KLESSYDRA-T03 INTRELEAVED MULTITHREADED PROCESSOR
+
+Intro: The Klessydra processing core family is a set of processors featuring full compliance with RISC-V, and pin-to-pin compatible with the PULPino Riscy cores. Klessydra-T02 is a bare-metal 32-bit processor supporting the RV32I from the RISC-V ISA, and one instruction from the Atomic "A" extension.
+
+Architecture: T02 is an interleaved multithreaded processor (Aka, barrel processor). It interleaves two hardware threads (harts). Each hart has it's own registerfile, CSR-unit, and program counter, and they communicate with each other via software interrupts.
+
+Fencing role of the harts: The harts in our IMT archtiecture play an essential fencing role to avoid pipeline stalls. One role is to fence between registerfile RD & WR accesses, thus never having data-dependency pipeline stalls. The other is to fence between the execution and fetch stage, but since this core interleaves only two harts, we get 1 cycle penalty during a pipeline flush. A configuration like the T03 interleaves three harts and has zero pipeline flushing penalties.
+
+<p align="center">
+<img src="/pics/Klessydra-T02x.png" width="600">
+</p>
+
+A more advanced, and highly parametrizable version of the T02 is the T13 available at:
+
+https://github.com/klessydra/T13x
+
+# Merging T02x User Guide
 
 This guide explains how one can download and install Pulpino, and it's 
 modified version of the riscv-gnu toolchain. It also demonstrates
