@@ -1,6 +1,6 @@
 <img src="/pics/Klessydra_Logo.png" width="400">
 
-# KLESSYDRA-T03 INTRELEAVED MULTITHREADED PROCESSOR
+# KLESSYDRA-T02 INTRELEAVED MULTITHREADED PROCESSOR
 
 Intro: The Klessydra processing core family is a set of processors featuring full compliance with RISC-V, and pin-to-pin compatible with the PULPino Riscy cores. Klessydra-T02 is a bare-metal 32-bit processor supporting the RV32I from the RISC-V ISA, and one instruction from the Atomic "A" extension.
 
