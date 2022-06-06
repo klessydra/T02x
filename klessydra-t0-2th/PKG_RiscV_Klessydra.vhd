@@ -141,7 +141,7 @@ package riscv_klessydra is
   constant MESTATUS_addr      : std_logic_vector (11 downto 0) := "011110111000";
   constant MCPUID_addr        : std_logic_vector (11 downto 0) := "111100000000";
   constant MIMPID_addr        : std_logic_vector (11 downto 0) := "111100000001";
-  constant MHARTID_addr       : std_logic_vector (11 downto 0) := "111100010000";
+  constant MHARTID_addr       : std_logic_vector (11 downto 0) := "111100010100";
   constant BADADDR_addr       : std_logic_vector (11 downto 0) := "001101000011";
   constant MIRQ_addr          : std_logic_vector (11 downto 0) := "111111000000";
   constant MCYCLE_addr        : std_logic_vector (11 downto 0) := x"B00";
