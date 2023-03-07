@@ -10,7 +10,7 @@ Fencing role of the harts: The harts in our IMT archtiecture play an essential f
 
 PROCEDURE:
 
-To use Klessydra-T02x, please download [PULPino-Klessydra](https://github.com/klessydra/pulpino-klessydra) , and follow the guide over there. 
+To use Klessydra-T02, please download [PULPino-Klessydra](https://github.com/klessydra/pulpino-klessydra) , and follow the guide over there. 
 
 - For more details about the Klessydra processing cores, please refer to the technincal manual in Docs
 - For more details about the Klessydra runtime libraries, please refer to the software runtime manual in Docs
